@@ -21,6 +21,19 @@ int main() {
     std::cout << *pAge;
     std::cout << *pFreePizzas;
 
+    // null pointers
+
+    int *pointer = nullptr;
+    int x = 123;
+
+    pointer = &x; // setting the pointer to the adress of x in memory
+
+    if (pointer == nullptr) {
+        std::cout << "address was not assigned!\n";
+    }else {
+        std::cout << "address was assigned!\n";
+        std::cout << *pointer;
+    }
 
 
 
